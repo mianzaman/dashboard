@@ -1,0 +1,63 @@
+.generateLabels {
+    text-transform: uppercase;
+  
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+  
+      button {
+        padding: 1rem;
+        font-family: "math";
+        cursor: pointer;
+      }
+    }
+  
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+  
+    /* Additional styling for the DataTable and labels display */
+    .MuiDataGrid-root {
+      background-color: #E5E5E5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .MuiDataGrid-cell {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .generateButton {
+      background-color: #4C998A;
+      color: white;
+      border-radius: 20px;
+      padding: 64px;
+      &:hover {
+        background-color: #4C998A;
+      }
+    }
+  
+    .downloadButton {
+      background-color: #4C998A;
+      color: white;
+      &:hover {
+        background-color: #4C998A;
+      }
+    }
+  
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .info {
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .MuiDataGrid-root {
+        font-size: 12px;
+      }
+    }
+  }
+  

@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.add {
+  width: 98vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: $main-bg;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: $soft-color;
+      text-align: center;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 500px;
+      justify-content: space-between;
+
+      .item {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        label {
+          font-size: 14px;
+        }
+
+        input {
+          padding: 10px;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          border: 1px solid $soft-color;
+          border-radius: 3px;
+        }
+        .select-container{
+          // appearance: none;
+          padding: 10px;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          border: 1px solid $soft-color;
+          border-radius: 3px;
+        }
+        option {
+          background-color: $main-bg; /* Background color of dropdown menu */
+          color: white; /* Text color of options */
+          padding: 10px;
+          border: none;
+        }
+        
+      }
+      .add-btn{
+
+        width: 100%;
+        text-align: center;
+       button {
+        width: 50%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #4C998A ;
+        border-radius: 20px
+       }
+      }
+      
+    }
+  }
+}
